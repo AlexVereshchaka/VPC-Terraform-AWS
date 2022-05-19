@@ -13,12 +13,6 @@
    - [alb.tf](https://github.com/OlesYudin/demo_2/blob/main/modules/vpc/alb.tf "alb.tf") create Application Load Balancer for instance in private subnets
    - [nat.tf](https://github.com/OlesYudin/demo_2/blob/main/modules/vpc/nat.tf "nat.tf") create 1 Network Address Translation in first public subnet to route outbound traffic from instance in private subnet to Internet
 
-### <div align="center">Infrastructure scheme</div>
-
-<p align="center">
-  <img src="https://github.com/OlesYudin/demo_2/blob/main/images/Network%20infrastructure%20DEMO_2.png" alt="Scheme of creation VPC in AWS"/>
-</p>
-
 ### Secure SSH connection to instance in private subnets
 
 If you need to connect to ec2 with only private IP-address, you can use [jump host](https://wiki.gentoo.org/wiki/SSH_jump_host "jump host"). Now, you dont need to push private keys to bastion host, all you need is a configure config file in your local machine in path for example: `~/.ssh/config`.
